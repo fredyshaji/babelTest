@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DAF7CD8228AA7AA4007277A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7CD8128AA7AA4007277A9 /* AppDelegate.swift */; };
 		DAF7CD8428AA7AA4007277A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7CD8328AA7AA4007277A9 /* SceneDelegate.swift */; };
-		DAF7CD8628AA7AA4007277A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7CD8528AA7AA4007277A9 /* ViewController.swift */; };
+		DAF7CD8628AA7AA4007277A9 /* WordGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7CD8528AA7AA4007277A9 /* WordGameViewController.swift */; };
 		DAF7CD8928AA7AA4007277A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF7CD8728AA7AA4007277A9 /* Main.storyboard */; };
 		DAF7CD8B28AA7AA6007277A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF7CD8A28AA7AA6007277A9 /* Assets.xcassets */; };
 		DAF7CD8E28AA7AA6007277A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF7CD8C28AA7AA6007277A9 /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		DAF7CD7E28AA7AA4007277A9 /* BabbelTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabbelTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF7CD8128AA7AA4007277A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF7CD8328AA7AA4007277A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAF7CD8528AA7AA4007277A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAF7CD8528AA7AA4007277A9 /* WordGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameViewController.swift; sourceTree = "<group>"; };
 		DAF7CD8828AA7AA4007277A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAF7CD8A28AA7AA6007277A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF7CD8D28AA7AA6007277A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				DAF7CD8128AA7AA4007277A9 /* AppDelegate.swift */,
 				DAF7CD8328AA7AA4007277A9 /* SceneDelegate.swift */,
-				DAF7CD8528AA7AA4007277A9 /* ViewController.swift */,
+				DAF7CD8528AA7AA4007277A9 /* WordGameViewController.swift */,
 				DAF7CD8728AA7AA4007277A9 /* Main.storyboard */,
 				DAF7CD8A28AA7AA6007277A9 /* Assets.xcassets */,
 				DAF7CD8C28AA7AA6007277A9 /* LaunchScreen.storyboard */,
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAF7CD8628AA7AA4007277A9 /* ViewController.swift in Sources */,
+				DAF7CD8628AA7AA4007277A9 /* WordGameViewController.swift in Sources */,
 				DAF7CD8228AA7AA4007277A9 /* AppDelegate.swift in Sources */,
 				DAF7CD8428AA7AA4007277A9 /* SceneDelegate.swift in Sources */,
 			);
