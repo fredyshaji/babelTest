@@ -60,6 +60,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="correctButtonClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBb-2D-OWM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rA-Lh-QAv">
                                 <rect key="frame" x="235.5" y="722" width="150" height="70"/>
@@ -80,6 +83,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="incorrectButtonClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXs-Y9-q0u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
