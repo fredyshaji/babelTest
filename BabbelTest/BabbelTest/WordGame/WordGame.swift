@@ -17,6 +17,11 @@ struct WordGame: Decodable {
         englishText = wordGame.englishText 
     }
 
+    init(spanishText: String = "", englishText: String = "") {
+        self.spanishText = spanishText
+        self.englishText = englishText
+    }
+
     enum CodingKeys: String, CodingKey {
         case spanishText = "text_spa"
         case englishText = "text_eng"
