@@ -15,6 +15,8 @@ class WordGameViewController: UIViewController {
     @IBOutlet weak var englishWordLabel: UILabel!
     @IBOutlet weak var correctChoiceButton: UIButton!
     @IBOutlet weak var incorrectChoiceButton: UIButton!
+
+    var viewModel = WordGameViewModel()
     
     let correctAttemptsTitle = "Correct attempts: "
     let wrongAttemptsTitle = "Wrong attempts: "
@@ -25,6 +27,7 @@ class WordGameViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpUI()
+        viewModel.fetchData()
     }
 
     func setUpUI() {
