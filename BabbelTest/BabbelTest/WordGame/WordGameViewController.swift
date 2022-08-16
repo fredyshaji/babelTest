@@ -35,8 +35,13 @@ class WordGameViewController: UIViewController {
 
     func setUpUI() {
         updateScore()
-        correctChoiceButton.titleLabel?.text = correctTitle
-        incorrectChoiceButton.titleLabel?.text = wrongTitle
+
+        correctChoiceButton.setTitle(correctTitle, for: .normal)
+        correctChoiceButton.setTitle(correctTitle, for: .selected)
+        incorrectChoiceButton.setTitle(wrongTitle, for: .normal)
+        incorrectChoiceButton.setTitle(wrongTitle, for: .selected)
+        correctChoiceButton.layer.cornerRadius = 20
+        incorrectChoiceButton.layer.cornerRadius = 20
     }
 
     func loadQuestion() {

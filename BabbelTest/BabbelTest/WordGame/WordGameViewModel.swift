@@ -35,9 +35,15 @@ final class WordGameViewModel {
 
     func loadQuestion() -> WordGame {
         currentQuestion = WordGame()
-        if truePercent > 25 {
-            currentQuestion.englishText = wordsArray.randomElement()?.englishText ?? ""
-            currentQuestion.spanishText = wordsArray.randomElement()?.spanishText ?? ""
+        if truePercent > 25 || questionCount < 2 {
+            guard let questionOne = wordsArray.randomElement(),
+                  let questionTwo = wordsArray.randomElement(),
+                  let questionThree = wordsArray.randomElement(),
+                  let questionFour = wordsArray.randomElement()
+            else { return currentQuestion }
+            
+            currentQuestion.englishText = ([questionOne.englishText , questionTwo.englishText, questionThree.englishText , questionFour.englishText].randomElement()) ?? ""
+            currentQuestion.spanishText = ([questionOne.spanishText, questionTwo.spanishText, questionThree.spanishText, questionFour.spanishText].randomElement()) ?? ""
             return currentQuestion
         } else {
             let correctWord = wordsArray.randomElement()
