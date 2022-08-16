@@ -114,6 +114,7 @@
                         <outlet property="correctChoiceButton" destination="I2w-Fn-vw5" id="GL1-eq-Qlj"/>
                         <outlet property="englishWordLabel" destination="nfa-dv-mnl" id="ZED-fw-urA"/>
                         <outlet property="incorrectChoiceButton" destination="8rA-Lh-QAv" id="z7K-Pa-mVB"/>
+                        <outlet property="spanishLabelCenterYConstraint" destination="MNT-gM-nwR" id="QUj-q0-qSc"/>
                         <outlet property="spanishWordLabel" destination="VAB-F9-lTN" id="rZN-sC-Eqy"/>
                         <outlet property="wrongAttemptsCountLabel" destination="TG5-FU-sc2" id="c4K-NL-L1s"/>
                     </connections>
