@@ -15,7 +15,8 @@ class WordGameViewController: UIViewController {
     @IBOutlet weak var englishWordLabel: UILabel!
     @IBOutlet weak var correctChoiceButton: UIButton!
     @IBOutlet weak var incorrectChoiceButton: UIButton!
-
+    @IBOutlet weak var spanishLabelCenterYConstraint: NSLayoutConstraint!
+    
     var viewModel = WordGameViewModel()
     var timer = Timer()
     
@@ -47,10 +48,17 @@ class WordGameViewController: UIViewController {
 
     func loadQuestion() {
         timer.invalidate()
+        spanishLabelCenterYConstraint.constant = -(self.view.frame.height / 2)
+        view.layoutIfNeeded()
         let question = viewModel.loadQuestion()
-        self.spanishWordLabel.text = question.spanishText
-        self.englishWordLabel.text = question.englishText
+        spanishWordLabel.text = question.spanishText
+        englishWordLabel.text = question.englishText
         startTimer()
+        UIView.animate(withDuration: 5, delay: 0, options: [.transitionFlipFromTop],
+                       animations: {
+            self.spanishLabelCenterYConstraint.constant = ((self.view.frame.height / 2) + self.spanishWordLabel.frame.height)
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
 
     func updateScore() {
