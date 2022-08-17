@@ -10,12 +10,20 @@ import XCTest
 
 class BabbelTestTests: XCTestCase {
 
+    var sut: WordGameViewController!
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = storyboard.instantiateViewController(withIdentifier: "WordGameViewController") as? WordGameViewController
+        sut.loadView()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        try super.tearDownWithError()
     }
 
     func testExample() throws {
@@ -33,4 +41,34 @@ class BabbelTestTests: XCTestCase {
         }
     }
 
+    func testFetchData() {
+        sut.viewModel.fetchData()
+        XCTAssertEqual(sut.viewModel.wordsArray.count, 297)
+    }
+
+    func testTimerAction() {
+        sut.viewModel.fetchData()
+        sut.loadQuestion()
+        sut.timer.invalidate() // invalidated the timer to stop loading more questions
+        sut.timerAction()
+        XCTAssertEqual(sut.viewModel.questionCount, 1)
+        sut.loadQuestion()
+        sut.timer.invalidate()
+        sut.timerAction()
+        XCTAssertEqual(sut.viewModel.questionCount, 2)
+    }
+
+    func testCheckAnswer() {
+        sut.viewModel.fetchData()
+        guard let wordOne = sut.viewModel.wordsArray.first,
+              let wordTwo = sut.viewModel.wordsArray.last else { return }
+
+        //Check for correct word pair
+        sut.viewModel.currentQuestion = wordOne
+        XCTAssertTrue(sut.viewModel.checkAnswer())
+
+        //Check for correct word pair
+        sut.viewModel.currentQuestion = WordGame(spanishText: wordOne.spanishText, englishText: wordTwo.englishText)
+        XCTAssertFalse(sut.viewModel.checkAnswer())
+    }
 }

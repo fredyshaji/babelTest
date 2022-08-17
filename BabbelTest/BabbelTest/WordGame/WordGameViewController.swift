@@ -98,6 +98,7 @@ class WordGameViewController: UIViewController {
     }
 
     @objc func timerAction() {
+        _ = viewModel.checkAnswer()
         incorrectCount += 1
         updateScore()
     }
