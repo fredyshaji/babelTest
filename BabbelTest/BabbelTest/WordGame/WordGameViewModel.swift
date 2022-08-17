@@ -65,6 +65,5 @@ final class WordGameViewModel {
 
     func updateTruePercent() {
         truePercent = (correctPairCount/questionCount) * 100
-        print("********\(truePercent)********")
     }
 }
