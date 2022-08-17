@@ -19,9 +19,7 @@
 		DAF7CDB328AA89E8007277A9 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = DAF7CDB228AA89E8007277A9 /* words.json */; };
 		DAF7CDB428AA89E8007277A9 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = DAF7CDB228AA89E8007277A9 /* words.json */; };
 		DAF7CDB728AA976D007277A9 /* WordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7CDB628AA976D007277A9 /* WordGame.swift */; };
-		DAF7CDB828AA976D007277A9 /* WordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7CDB628AA976D007277A9 /* WordGame.swift */; };
 		DAF7CDBA28AA9B73007277A9 /* WordGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7CDB928AA9B73007277A9 /* WordGameViewModel.swift */; };
-		DAF7CDBB28AA9B73007277A9 /* WordGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7CDB928AA9B73007277A9 /* WordGameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -301,8 +299,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF7CD9928AA7AA6007277A9 /* BabbelTestTests.swift in Sources */,
-				DAF7CDBB28AA9B73007277A9 /* WordGameViewModel.swift in Sources */,
-				DAF7CDB828AA976D007277A9 /* WordGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
