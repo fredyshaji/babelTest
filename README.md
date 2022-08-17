@@ -34,3 +34,9 @@ game mechanics - 40%
 - did not create a seperate strings file as there was only one view controller
 
 Code Coverage - 75.6%
+
+3. Git Branching strategy
+- A master branch from which releases are taken
+- a develop branch were development happens
+- individual feature and bug branches which are merged on to develop after raising pull request
+- fully tested develop is merged into master
